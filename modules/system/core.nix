@@ -58,5 +58,6 @@
   # === Programs ===
   programs.hyprland.enable = true;
 
+  programs.vulkan.enable = true;
 
 }
