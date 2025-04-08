@@ -3,17 +3,17 @@
 
   # === Inputs ===
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
     home-manager = {
-      url = "github:nix-community/home-manager/release-24.11";
+      url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
     # === Application-specific Flakes ===
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
-      # inputs.nixpkgs.follows = "nixpkgs";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
     nix-flatpak = {
       url = "github:gmodena/nix-flatpak";
@@ -21,7 +21,7 @@
   };
 
   # === Outputs ===
-  outputs = { self, nixpkgs, home-manager, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, nix-flatpak, ... }@inputs:
     let
       # === Common Variables ===
       systemName = "forge";
@@ -54,25 +54,8 @@
             ./nixos/${systemName}/configuration.nix
 
             # === Third-Party NixOS Modules ===
-            # Integrate features from other flakes.
             inputs.nix-flatpak.nixosModules.nix-flatpak
             inputs.home-manager.nixosModules.home-manager
-          ];
-        };
-      };
-
-      # === Home Manager Configurations ===
-      homeConfigurations = {
-        "${username}@${systemName}" = home-manager.lib.homeManagerConfiguration {
-          inherit pkgs;
-
-          extraSpecialArgs = {
-            inherit inputs username;
-            flakeRoot = ./.;
-          };
-
-          modules = [
-            ./home/${username}/home.nix
           ];
         };
       };
