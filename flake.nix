@@ -32,9 +32,8 @@
       nixosConfigurations = {
         "${systemName}" = nixpkgs.lib.nixosSystem {
           system = systemArch;
-          specialArgs = { inherit inputs username; };
-          extraSpecialArgs = {
-            inherit inputs;
+          specialArgs = {
+            inherit inputs username;
             flakeRoot = ./.;
           };
           modules = [
