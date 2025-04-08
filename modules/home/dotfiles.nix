@@ -8,12 +8,12 @@
     };
 
     ".config/nushell" = {
-      source = flakeRoot + "home/aeon/dotfiles/nushell";
+      source = flakeRoot + "/home/aeon/dotfiles/nushell";
       recursive = true;
     };
 
     ".config/walker" = {
-      source = flakeRoot + "home/aeon/dotfiles/walker";
+      source = flakeRoot + "/home/aeon/dotfiles/walker";
       recursive = true;
     };
   };
