@@ -24,6 +24,7 @@
     plex-desktop
     vscode
     heroic
+    deluge
 
     # Ricing
     bibata-cursors
