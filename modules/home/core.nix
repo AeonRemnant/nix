@@ -41,11 +41,6 @@
     userEmail = "aeonremnant@github.com";
     extraConfig = {
       credential.helper = "${pkgs.git-credential-manager}/bin/git-credential-manager";
-  };
-
-  programs.direnv = {
-     enable = true;
-     nix-direnv.enable = true;
-  };
+    };
   };
 }
