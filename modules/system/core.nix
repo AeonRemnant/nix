@@ -38,6 +38,11 @@
     extraPortals = [ pkgs.xdg-desktop-portal-hyprland pkgs.xdg-desktop-portal-gtk ];
   };
 
+  nix.settings = {
+    substituters = ["https://nix-gaming.cachix.org"];
+    trusted-public-keys = ["nix-gaming.cachix.org-1:nbjlureqMbRAxR1gJ/f3hxemL9svXaZF/Ees8vCUUs4="];
+  };
+
   # === Security ===
   security.polkit.enable = true;
 
@@ -57,7 +62,4 @@
 
   # === Programs ===
   programs.hyprland.enable = true;
-
-  programs.vulkan.enable = true;
-
 }

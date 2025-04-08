@@ -44,4 +44,5 @@
       credential.helper = "${pkgs.git-credential-manager}/bin/git-credential-manager";
     };
   };
+  programs.steam.platformOptimizations.enable = true;
 }
