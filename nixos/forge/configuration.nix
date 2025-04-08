@@ -42,35 +42,17 @@
   };
 
   # === Home Manager ===
-  # Configure Home Manager integration for NixOS
   home-manager = {
-    # Use the same nixpkgs instance as the system
-    # pkgs = pkgs; # Usually inherited automatically
-
-    # Allow HM to use system-wide packages
     useGlobalPkgs = true;
-    # Allow HM to install user-specific packages
     useUserPackages = true;
-    # Set backup extension for dotfiles managed by Home Manager
     backupFileExtension = "nixbak";
-
-    # Arguments passed down to Home Manager modules for users defined below
     extraSpecialArgs = {
-      # Pass arguments received from flake.nix's 'specialArgs'
       inherit inputs username flakeRoot;
     };
-
-    # Define users managed by Home Manager on this system
-    users.${username} =
-      # Import the user's home.nix file. Assumes it returns the full user config attrset.
-      # Explicitly pass arguments needed by home.nix. Adjust the list as needed.
-      import ../../home/${username}/home.nix {
-        inherit pkgs lib config inputs username flakeRoot; # Pass common args
-      };
-      # --- ALTERNATIVE (if home.nix is a standard module): ---
-      # users.${username} = { imports = [ ../../home/${username}/home.nix ]; };
-
-  }; # End home-manager
+    users.${username} = {
+      imports = [ ../../home/${username}/home.nix ];
+    };
+  };
 
   # === Hardware / Drivers ===
   # (Likely configured in imported modules like nvidia.nix)
