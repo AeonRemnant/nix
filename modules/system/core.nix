@@ -58,6 +58,10 @@
     alsa.support32Bit = true;
     pulse.enable = true;
   };
+  # Flatpak
+  services.flatpak.enable = true;
+  services.flatpak.update.onActivation = true;
+  # SSH
   services.openssh.enable = true;
   services.dbus.enable = true;
   networking.networkmanager.enable = true;
