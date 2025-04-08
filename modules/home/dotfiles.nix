@@ -1,19 +1,19 @@
-{ config, pkgs, inputs, username, ... }: {
+{ config, pkgs, inputs, username, flakeRoot, ... }: {
 
   # === Dotfile Management ===
   home.file = {
     ".config/hypr" = {
-      source = ../../../home/aeon/dotfiles/hyprland;
+      source = flakeRoot + /home/aeon/dotfiles/hyprland;
       recursive = true;
     };
 
     ".config/nushell" = {
-      source = ../../../home/aeon/dotfiles/nushell;
+      source = flakeRoot + home/aeon/dotfiles/nushell;
       recursive = true;
     };
 
     ".config/walker" = {
-      source = ../../../home/aeon/dotfiles/walker;
+      source = flakeRoot + home/aeon/dotfiles/walker;
       recursive = true;
     };
   };

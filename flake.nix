@@ -33,6 +33,10 @@
         "${systemName}" = nixpkgs.lib.nixosSystem {
           system = systemArch;
           specialArgs = { inherit inputs username; };
+          extraSpecialArgs = {
+            inherit inputs;
+            flakeRoot = ./.;
+          };
           modules = [
 
             # === Nix module imports ===
