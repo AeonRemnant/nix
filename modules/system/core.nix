@@ -26,6 +26,8 @@
     gtk4-layer-shell
     upower
     tree
+    btop
+    vulkan-tools
   ];
 
   fonts.packages = with pkgs; [
