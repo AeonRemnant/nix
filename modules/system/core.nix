@@ -59,6 +59,7 @@
   services.openssh.enable = true;
   services.dbus.enable = true;
   networking.networkmanager.enable = true;
+  services.upower.enable = true;
 
   # === Programs ===
   programs.hyprland.enable = true;
