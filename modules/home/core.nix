@@ -32,7 +32,7 @@
 
   services.flatpak.packages = [
     "app.freelens.Freelens"
-    "com.mastermindzh.tidal-hifi"
+    # "com.mastermindzh.tidal-hifi"
   ];
 
   # === Programs ===
