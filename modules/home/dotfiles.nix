@@ -3,17 +3,17 @@
   # === Dotfile Management ===
   home.file = {
     ".config/hypr" = {
-      source = ./dotfiles/hyprland;
+      source = ../../../home/aeon/dotfiles/hyprland;
       recursive = true;
     };
 
     ".config/nushell" = {
-      source = ./dotfiles/nushell;
+      source = ../../../home/aeon/dotfiles/nushell;
       recursive = true;
     };
 
     ".config/walker" = {
-      source = ./dotfiles/walker;
+      source = ../../../home/aeon/dotfiles/walker;
       recursive = true;
     };
   };
