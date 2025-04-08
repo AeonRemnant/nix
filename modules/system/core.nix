@@ -24,7 +24,7 @@
     hyprpolkitagent
     xdg-desktop-portal-hyprland
     gtk4-layer-shell
-
+    upower
     tree
   ];
 
