@@ -25,6 +25,7 @@
     vscode
     heroic
     deluge
+    tidal-hifi
 
     # Ricing
     bibata-cursors
