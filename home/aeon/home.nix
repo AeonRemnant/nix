@@ -6,7 +6,6 @@
     inputs.nix-flatpak.homeManagerModules.nix-flatpak
     ../../modules/home/core.nix
     ../../modules/home/dotfiles.nix
-    ../../modules/home/theme.nix
     ../../modules/home/gaming.nix
     ../../modules/home/hyprland.nix
   ];
