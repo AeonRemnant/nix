@@ -3,17 +3,17 @@
   # === Dotfile Management ===
   home.file = {
     ".config/hypr" = {
-      source = flakeRoot + /home/aeon/dotfiles/hyprland;
+      source = flakeRoot + "/home/aeon/dotfiles/hyprland";
       recursive = true;
     };
 
     ".config/nushell" = {
-      source = flakeRoot + home/aeon/dotfiles/nushell;
+      source = flakeRoot + "home/aeon/dotfiles/nushell";
       recursive = true;
     };
 
     ".config/walker" = {
-      source = flakeRoot + home/aeon/dotfiles/walker;
+      source = flakeRoot + "home/aeon/dotfiles/walker";
       recursive = true;
     };
   };
