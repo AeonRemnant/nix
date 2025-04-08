@@ -7,12 +7,12 @@
     hyprcursor
     mako
     walker
-    grim
-    slurp
-    hyprswitch
-    hyprlandPlugins.hyprexpo
-    wl-clipboard
-    nwg-look
+    # grim
+    # slurp
+    # hyprswitch
+    # hyprlandPlugins.hyprexpo
+    # wl-clipboard
+    # nwg-look
   ];
 
   # === Services ===

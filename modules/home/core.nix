@@ -13,20 +13,20 @@
     helix
     git-credential-manager
 
-    # Programming
-    go
-    flutter
+    # # Programming
+    # go
+    # flutter
 
     # Apps
     inputs.zen-browser.packages."${pkgs.system}".default
-    spacedrive
-    vesktop
-    plex-desktop
-    vscode
-    heroic
+    # spacedrive
+    # vesktop
+    # plex-desktop
+    # vscode
+    # heroic
 
-    # Ricing
-    bibata-cursors
+    # # Ricing
+    # bibata-cursors
   ];
 
   services.flatpak.packages = [
