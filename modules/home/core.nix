@@ -15,7 +15,7 @@
 
     # Programming
     go
-    flutterPackages-source.stable
+    flutter
 
     # Apps
     inputs.zen-browser.packages."${pkgs.system}".default
