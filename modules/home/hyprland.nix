@@ -16,10 +16,10 @@
     nwg-look
   ];
 
-  wayland.windowManager.hyprland.plugins = {
+  wayland.windowManager.hyprland.plugins = [
     pkgs.hyprlandPlugins.hyprspace
     pkgs.hyprlandPlugins.hyprexpo
-  };
+  ];
 
   # === Services ===
   services.mako.enable = true; 
