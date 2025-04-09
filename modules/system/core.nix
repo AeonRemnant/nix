@@ -28,7 +28,6 @@
     tree
     btop
     vulkan-tools
-    gdisk
     btrfs
   ];
 
