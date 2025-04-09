@@ -24,4 +24,14 @@
     XCURSOR_THEME = "Bibata-Modern-Ice";
     XCURSOR_SIZE = "24";
   };
+
+  # === Cursor Management ===
+  home.pointerCursor = {
+    name = "Bibata-Modern-Ice";
+    size = 24;
+    package = pkgs.bibata-cursors;
+
+    gtk.enable = true;
+    x11.enable = true;
+  };
 }

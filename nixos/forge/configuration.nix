@@ -42,7 +42,6 @@
     users.${username} = {
       imports = [ ../../home/${username}/home.nix ];
 
-      # Debug
       home.username = username;
       home.homeDirectory = "/home/${username}";
       home.stateVersion = "24.11";

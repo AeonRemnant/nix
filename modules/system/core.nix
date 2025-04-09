@@ -24,8 +24,10 @@
     hyprpolkitagent
     xdg-desktop-portal-hyprland
     gtk4-layer-shell
-
+    upower
     tree
+    btop
+    vulkan-tools
   ];
 
   fonts.packages = with pkgs; [
@@ -36,6 +38,11 @@
   xdg.portal = {
     enable = true;
     extraPortals = [ pkgs.xdg-desktop-portal-hyprland pkgs.xdg-desktop-portal-gtk ];
+  };
+
+  nix.settings = {
+    substituters = ["https://nix-gaming.cachix.org"];
+    trusted-public-keys = ["nix-gaming.cachix.org-1:nbjlureqMbRAxR1gJ/f3hxemL9svXaZF/Ees8vCUUs4="];
   };
 
   # === Security ===
@@ -51,12 +58,15 @@
     alsa.support32Bit = true;
     pulse.enable = true;
   };
+  # Flatpak
+  services.flatpak.enable = true;
+  services.flatpak.update.onActivation = true;
+  # System
   services.openssh.enable = true;
   services.dbus.enable = true;
   networking.networkmanager.enable = true;
+  services.upower.enable = true;
 
   # === Programs ===
   programs.hyprland.enable = true;
-
-
 }

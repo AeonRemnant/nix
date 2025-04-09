@@ -2,10 +2,10 @@
 
 {
   home.packages = with pkgs; [
-    # steam
-    # heroic
-    # lutris
-    # protonup-qt
-    # mangohud
+    steam
+    heroic
+    lutris
+    protonup-qt
+    mangohud
   ];
 }
