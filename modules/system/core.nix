@@ -48,9 +48,6 @@
   # === Security ===
   security.polkit.enable = true;
 
-  # === Environment ===
-  environment.sessionVariables.NIXOS_OZONE_WL = "1";
-
   # === Services ===
   services.pipewire = {
     enable = true;

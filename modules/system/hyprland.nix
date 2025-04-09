@@ -9,7 +9,15 @@
 
   environment.systemPackages = with pkgs; [
      xdg-desktop-portal-hyprland
-     slurp 
-     grim
   ];
+
+   wayland.windowManager.hyprland = {
+      enable = true;
+      package = null;
+      portalPackage = null;
+   };
+
+  # === Environment ===
+  environment.sessionVariables.NIXOS_OZONE_WL = "1";
+
 }

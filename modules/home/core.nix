@@ -12,6 +12,7 @@
     neofetch
     helix
     git-credential-manager
+    nix-search-cli
 
     # # Programming
     go
