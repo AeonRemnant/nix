@@ -31,7 +31,7 @@
   ];
 
   services.flatpak.packages = [
-    # "app.freelens.Freelens"
+    "app.freelens.Freelens"
     "com.mastermindzh.tidal-hifi"
   ];
 
