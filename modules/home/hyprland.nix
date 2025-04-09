@@ -21,6 +21,10 @@
     pkgs.hyprlandPlugins.hyprexpo
   ];
 
+  wayland.windowManager.hyprland.settings = {
+    debug.disable_logs = false;
+  };
+
   # === Services ===
   services.mako.enable = true; 
 
