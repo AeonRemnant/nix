@@ -24,7 +24,6 @@
     vesktop
     plex-desktop
     vscode
-    heroic
     deluge
     pwvucontrol
 
