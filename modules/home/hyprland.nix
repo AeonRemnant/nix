@@ -11,9 +11,15 @@
     slurp
     hyprswitch
     hyprlandPlugins.hyprexpo
+    hyprlandPlugins.hyprspace
     wl-clipboard
     nwg-look
   ];
+
+  wayland.windowManager.hyprland.plugins = {
+    pkgs.hyprlandPlugins.hyprspace
+    pkgs.hyprlandPlugins.hyprexpo
+  };
 
   # === Services ===
   services.mako.enable = true; 
