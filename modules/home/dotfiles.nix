@@ -20,8 +20,18 @@
 
 
   # === Variable Management ===
-  home.sessionVariables = {
-    XCURSOR_THEME = "Bibata-Modern-Ice";
-    XCURSOR_SIZE = "24";
-  };
+  # home.sessionVariables = {
+  #   XCURSOR_THEME = "Bibata-Modern-Ice";
+  #   XCURSOR_SIZE = "24";
+  # };
+
+  home.pointerCursor = {
+    name = "Bibata-Modern-Ice";
+    size = 24;
+    package = pkgs.bibata-cursors;
+
+    gtk.enable = true;
+    x11.enable = true;
+    qt.enable = true;
+  }
 }

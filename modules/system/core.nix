@@ -61,11 +61,12 @@
   # Flatpak
   services.flatpak.enable = true;
   services.flatpak.update.onActivation = true;
-  # SSH
+  # System
   services.openssh.enable = true;
   services.dbus.enable = true;
   networking.networkmanager.enable = true;
   services.upower.enable = true;
+  services.dconf.enable = true;
 
   # === Programs ===
   programs.hyprland.enable = true;
