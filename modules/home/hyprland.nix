@@ -16,6 +16,7 @@
     nwg-look
   ];
 
+  # === Wayland Config ===
   wayland.windowManager.hyprland.plugins = [
     pkgs.hyprlandPlugins.hyprspace
     pkgs.hyprlandPlugins.hyprexpo
@@ -23,6 +24,11 @@
 
   wayland.windowManager.hyprland.settings = {
     debug.disable_logs = false;
+  };
+
+  # === Mako Config ===
+  services.mako = {
+    defaultTimeout = 5000;
   };
 
   # === Services ===
