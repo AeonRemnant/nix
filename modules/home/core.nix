@@ -25,6 +25,7 @@
     vscode
     heroic
     deluge
+    pauvcontrol
 
     # Ricing
     bibata-cursors
