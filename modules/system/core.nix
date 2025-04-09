@@ -28,7 +28,7 @@
     tree
     btop
     vulkan-tools
-    btrfs
+    btrfs-progs
   ];
 
   fonts.packages = with pkgs; [
