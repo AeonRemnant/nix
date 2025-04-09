@@ -28,6 +28,8 @@
     tree
     btop
     vulkan-tools
+    gdisk
+    btrfs
   ];
 
   fonts.packages = with pkgs; [
