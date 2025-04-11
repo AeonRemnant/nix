@@ -17,6 +17,7 @@
     terraform
     kubectl
     talosctl
+    omnictl
 
     # # Programming
     go
