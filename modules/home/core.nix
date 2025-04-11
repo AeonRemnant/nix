@@ -3,12 +3,12 @@
 {
   home.packages = with pkgs; [
 
-    # Terminal + Shell
+    # === Terminal + Shell ===
     ghostty
     nushell
     nushellPlugins.highlight
 
-    # Tools
+    # === Tools ===
     neofetch
     helix
     git-credential-manager
@@ -19,11 +19,13 @@
     talosctl
     omnictl
 
-    # # Programming
+    # === Programming ===
     go
     flutter
+    haskellPackages.ghcup
 
-    # Apps
+
+    # === Apps ===
     inputs.zen-browser.packages."${pkgs.system}".default
     spacedrive
     vesktop
@@ -32,7 +34,7 @@
     deluge
     pwvucontrol
 
-    # Ricing
+    # === Ricing ===
     bibata-cursors
   ];
 
