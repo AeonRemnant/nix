@@ -22,8 +22,6 @@
     # === Programming ===
     go
     flutter
-    haskellPackages.ghcup
-
 
     # === Apps ===
     inputs.zen-browser.packages."${pkgs.system}".default
