@@ -13,6 +13,10 @@
     helix
     git-credential-manager
     nix-search-cli
+    docker
+    terraform
+    kubectl
+    talosctl
 
     # # Programming
     go
