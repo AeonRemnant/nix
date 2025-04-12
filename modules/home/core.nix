@@ -32,7 +32,7 @@
     deluge
     pwvucontrol
     popsicle
-    impression
+    woeusb
 
     # === Ricing ===
     bibata-cursors
