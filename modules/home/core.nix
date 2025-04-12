@@ -33,6 +33,7 @@
     pwvucontrol
     popsicle
     woeusb
+    gale
 
     # === Ricing ===
     bibata-cursors

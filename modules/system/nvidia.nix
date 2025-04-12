@@ -18,11 +18,7 @@
       # Options: latest, stable, beta.
       package = config.boot.kernelPackages.nvidiaPackages.beta;
     };
-
-    hardware.nvidia.settings = {
-        Coolbits = "12";
-      }; 
-
+    
     # === Compatibility ===
     environment.variables = {
       LIBVA_DRIVER_NAME = "nvidia";
