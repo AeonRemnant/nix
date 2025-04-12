@@ -31,6 +31,7 @@
     vscode
     deluge
     pwvucontrol
+    popsicle
 
     # === Ricing ===
     bibata-cursors
