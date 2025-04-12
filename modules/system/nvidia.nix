@@ -15,12 +15,13 @@
       modesetting.enable = true;
       powerManagement.enable = true;
       open = false;
-      settings = {
-        Coolbits = "12";
-      };      
       # Options: latest, stable, beta.
       package = config.boot.kernelPackages.nvidiaPackages.beta;
     };
+
+    hardware.nvidia.settings = {
+        Coolbits = "12";
+      }; 
 
     # === Compatibility ===
     environment.variables = {
