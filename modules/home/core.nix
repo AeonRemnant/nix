@@ -25,7 +25,7 @@
 
     # === Apps ===
     inputs.zen-browser.packages."${pkgs.system}".default
-    spacedrive
+    xfce.thunar
     vesktop
     plex-desktop
     vscode
