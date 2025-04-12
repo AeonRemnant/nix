@@ -29,6 +29,7 @@
     btop
     vulkan-tools
     btrfs-progs
+    nvfancontrol
   ];
 
   fonts.packages = with pkgs; [
