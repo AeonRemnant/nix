@@ -19,6 +19,8 @@
     talosctl
     omnictl
     gource
+    xfce.thunar-archive-plugin
+    xfce.thunar-volman
 
     # === Programming ===
     go
@@ -46,11 +48,6 @@
 
   # === Programs ===
 
-  # Thunar config
-  programs.thunar.plugins = with pkgs.xfce; [
-    thunar-archive-plugin
-    thunar-volman
-  ];
   programs.xfconf.enable = true;
 
   # Git config
