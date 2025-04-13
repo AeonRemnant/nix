@@ -25,7 +25,7 @@
   #   user = username;
   # };
 
-  # services.displayManager.defaultSession = "hyprland";
+  services.displayManager.defaultSession = "hyprland";
 
   # === System Packages ===
   environment.systemPackages = with pkgs; [
