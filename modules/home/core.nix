@@ -36,6 +36,7 @@
     popsicle
     woeusb
     gale
+    prismlauncher
 
     # === Ricing ===
     bibata-cursors

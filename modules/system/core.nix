@@ -6,11 +6,10 @@
   time.timeZone = "Australia/Brisbane";
   i18n.defaultLocale = "en_AU.UTF-8";
 
-  # === Greetd config ===
   services.greetd = {
     enable = true;
     settings = {
-      default_session.command = "${pkgs.greetd.tuigreet}/bin/tuigreet --cmd Hyprland";
+      default_session.command = "${pkgs.greetd.tuigreet}/bin/tuigreet --cmd '${pkgs.nushell}/bin/nu -l -c \"exec Hyprland\"'";
     };
   };
 
