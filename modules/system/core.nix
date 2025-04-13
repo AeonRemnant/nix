@@ -30,6 +30,7 @@
     vulkan-tools
     btrfs-progs
     nvfancontrol
+    xfce.thunar
   ];
 
   fonts.packages = with pkgs; [
@@ -67,5 +68,18 @@
   services.upower.enable = true;
 
   # === Programs ===
+
+  # Hyprland config
   programs.hyprland.enable = true;
+
+  # Thunar config
+  programs.thunar.plugins = with pkgs.xfce; [
+    thunar-archive-plugin
+    thunar-volman
+  ];
+
+  programs.xfconf.enable = true;
+
+  services.gvfs.enable = true;
+  service.tumbler.enable = true;
 }

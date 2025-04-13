@@ -18,6 +18,7 @@
     kubectl
     talosctl
     omnictl
+    gource
 
     # === Programming ===
     go
@@ -25,7 +26,6 @@
 
     # === Apps ===
     inputs.zen-browser.packages."${pkgs.system}".default
-    xfce.thunar
     vesktop
     plex-desktop
     vscode
@@ -55,15 +55,4 @@
       credential.helper = "${pkgs.git-credential-manager}/bin/git-credential-manager";
     };
   };
-
-  # Thunar config
-  programs.thunar.plugins = with pkgs.xfce; [
-    thunar-archive-plugin
-    thunar-volman
-  ];
-
-  programs.xfconf.enable = true;
-
-  services.gvfs.enable = true;
-  service.tumbler.enable = true;
 }
