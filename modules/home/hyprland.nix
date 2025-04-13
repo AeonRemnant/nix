@@ -10,16 +10,19 @@
     grim
     slurp
     hyprswitch
-    hyprlandPlugins.hyprexpo
     hyprlandPlugins.hyprspace
     wl-clipboard
     nwg-look
   ];
 
   # === Wayland Config ===
+  wayland.windowManager.hyprland = {
+    package = null;
+    portalPackage = null;
+  };
+
   wayland.windowManager.hyprland.plugins = [
     pkgs.hyprlandPlugins.hyprspace
-    pkgs.hyprlandPlugins.hyprexpo
   ];
 
   wayland.windowManager.hyprland.settings = {
