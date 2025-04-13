@@ -26,6 +26,8 @@
     # === Apps ===
     inputs.zen-browser.packages."${pkgs.system}".default
     xfce.thunar
+    xfce.thunar-archive-plugin
+    gvfs
     vesktop
     plex-desktop
     vscode
