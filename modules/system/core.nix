@@ -32,6 +32,7 @@
     flatpak
     git
     wget
+    hyprland
     xwayland
     hyprpolkitagent
     gtk4-layer-shell
