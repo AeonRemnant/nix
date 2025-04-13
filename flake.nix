@@ -62,7 +62,7 @@
       homeConfigurations.aeon = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
         extraSpecialArgs = {
-          inherit inputs username flakeRoot;
+          inherit inputs username;
         };
         modules = [
           ./home/aeon/home.nix
