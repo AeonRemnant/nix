@@ -13,26 +13,21 @@
   #   };
   # };
 
-  # === SDDM ===
-  services.displayManager.sddm = {
+  services.greetd = {
     enable = true;
-    wayland.enable = true;
-
+    settings = {
+      initial_session = {
+        user = "aeon";
+        command = "hyprland";
+      };
+    };
   };
-
-  # services.displayManager.autoLogin = {
-  #   enable = true;
-  #   user = username;
-  # };
-
-  services.displayManager.defaultSession = "hyprland";
 
   # === System Packages ===
   environment.systemPackages = with pkgs; [
     flatpak
     git
     wget
-    hyprland
     xwayland
     hyprpolkitagent
     gtk4-layer-shell
@@ -53,6 +48,7 @@
   xdg.portal = {
     enable = true;
     extraPortals = [ pkgs.xdg-desktop-portal-hyprland pkgs.xdg-desktop-portal-gtk ];
+    config.common.default = "*";
   };
 
   nix.settings = {
