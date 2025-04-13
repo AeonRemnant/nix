@@ -4,6 +4,7 @@
 {
   # === Imports ===
   imports = [
+    inputs.home-manager.nixosModules.home-manager
     ./hardware-configuration.nix 
     ../../modules/system/core.nix 
     ../../modules/system/nvidia.nix 

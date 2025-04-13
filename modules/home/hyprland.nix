@@ -41,6 +41,6 @@
     QT_QPA_PLATFORMTHEME = "qt6ct";
 
     # Hyprland plugins
-    HYPRSPACE = "${pkgs.hyprlandPlugins.hyprspace}/lib/hyprland/plugins/hyprspace.so";
+    # HYPRSPACE = "${pkgs.hyprlandPlugins.hyprspace}/lib/hyprland/plugins/hyprspace.so";
   };
 }
