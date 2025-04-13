@@ -17,16 +17,6 @@
   wayland.windowManager.hyprland = {
     enable = true;
     xwayland.enable = true;
-    # package = null;
-    # portalPackage = null;
-  };
-
-  wayland.windowManager.hyprland.plugins = [
-    pkgs.hyprlandPlugins.hyprspace
-  ];
-
-  wayland.windowManager.hyprland.settings = {
-    debug.disable_logs = false;
   };
 
   # === Mako Config ===
@@ -48,4 +38,7 @@
   QT_AUTO_SCREEN_SCALE_FACTOR = "1";
   QT_QPA_PLATFORMTHEME = "qt6ct";
   };
+
+  # === Environment ===
+  HYPRSPACE = "${pkgs.hyprlandPlugins.hyprspace}/lib/hyprland/plugins/hyprspace.so";
 }
