@@ -23,7 +23,7 @@
     settings = {
       general.layout = "dwindle";
     };
-    extraConfig = ""
+    extraConfig = "";
   };
 
   # === Mako Config ===
