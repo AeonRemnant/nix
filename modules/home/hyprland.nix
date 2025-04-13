@@ -9,16 +9,16 @@
     walker
     grim
     slurp
-    hyprswitch
-    hyprlandPlugins.hyprspace
     wl-clipboard
     nwg-look
   ];
 
   # === Wayland Config ===
   wayland.windowManager.hyprland = {
-    package = null;
-    portalPackage = null;
+    enable = true;
+    xwayland.enable = true;
+    # package = null;
+    # portalPackage = null;
   };
 
   wayland.windowManager.hyprland.plugins = [
@@ -31,7 +31,7 @@
 
   # === Mako Config ===
   services.mako = {
-    defaultTimeout = 5000;
+    defaultTimeout = 4000;
   };
 
   # === Services ===

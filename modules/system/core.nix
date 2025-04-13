@@ -19,10 +19,8 @@
     flatpak
     git
     wget
-    hyprland
     xwayland
     hyprpolkitagent
-    xdg-desktop-portal-hyprland
     gtk4-layer-shell
     upower
     tree
@@ -48,6 +46,9 @@
     trusted-public-keys = ["nix-gaming.cachix.org-1:nbjlureqMbRAxR1gJ/f3hxemL9svXaZF/Ees8vCUUs4="];
   };
 
+  # === Environment ===
+  environment.sessionVariables.NIXOS_OZONE_WL = "1";
+
   # === Security ===
   security.polkit.enable = true;
 
@@ -66,20 +67,10 @@
   services.dbus.enable = true;
   networking.networkmanager.enable = true;
   services.upower.enable = true;
-
-  # === Programs ===
-
-  # Hyprland config
-  programs.hyprland.enable = true;
-
-  # Thunar config
-  programs.thunar.plugins = with pkgs.xfce; [
-    thunar-archive-plugin
-    thunar-volman
-  ];
-
-  programs.xfconf.enable = true;
-
+  # Thunar
   services.gvfs.enable = true;
   services.tumbler.enable = true;
+
+  # Hyprland config
+  programs.hyprland.enable = false; # Handled in home manager
 }
