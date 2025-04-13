@@ -4,6 +4,7 @@
   # === Packages ===
   home.packages = with pkgs; [
     hyprpaper
+    hyprls
     hyprcursor
     mako
     walker
