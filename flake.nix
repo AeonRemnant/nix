@@ -66,7 +66,7 @@
         };
         modules = [
           ./home/aeon/home.nix
-  ];
-};
+        ];
+      };
     };
 }
