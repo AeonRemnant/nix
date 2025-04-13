@@ -1,4 +1,4 @@
-{ config, pkgs, lib, ... }: 
+{ config, pkgs, lib, username, ... }: 
 
 {
 
@@ -6,12 +6,26 @@
   time.timeZone = "Australia/Brisbane";
   i18n.defaultLocale = "en_AU.UTF-8";
 
-  services.greetd = {
+  # services.greetd = {
+  #   enable = true;
+  #   settings = {
+  #     default_session.command = "${pkgs.greetd.tuigreet}/bin/tuigreet";
+  #   };
+  # };
+
+  # === SDDM ===
+  services.displayManager.sddm = {
     enable = true;
-    settings = {
-      default_session.command = "${pkgs.greetd.tuigreet}/bin/tuigreet --cmd '${pkgs.nushell}/bin/nu -l -c \"exec Hyprland\"'";
-    };
+    wayland.enable = true;
+
   };
+
+  services.displayManager.autoLogin = {
+    enable = true;
+    user = username;
+  };
+
+  services.displayManager.defaultSession = "hyprland";
 
   # === System Packages ===
   environment.systemPackages = with pkgs; [
