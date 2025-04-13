@@ -26,8 +26,6 @@
     # === Apps ===
     inputs.zen-browser.packages."${pkgs.system}".default
     xfce.thunar
-    xfce.thunar-archive-plugin
-    gvfs
     vesktop
     plex-desktop
     vscode
@@ -47,6 +45,8 @@
   ];
 
   # === Programs ===
+
+  # Git config
   programs.git = {
     enable = true;
     userName = "AeonRemnant";
@@ -55,4 +55,15 @@
       credential.helper = "${pkgs.git-credential-manager}/bin/git-credential-manager";
     };
   };
+
+  # Thunar config
+  programs.thunar.plugins = with pkgs.xfce; [
+    thunar-archive-plugin
+    thunar-volman
+  ];
+
+  programs.xfconf.enable = true;
+
+  services.gvfs.enable = true;
+  service.tumbler.enable = true;
 }
