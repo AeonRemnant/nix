@@ -81,5 +81,5 @@
   programs.xfconf.enable = true;
 
   services.gvfs.enable = true;
-  service.tumbler.enable = true;
+  services.tumbler.enable = true;
 }
