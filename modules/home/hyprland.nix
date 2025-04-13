@@ -17,6 +17,13 @@
   wayland.windowManager.hyprland = {
     enable = true;
     xwayland.enable = true;
+    plugins = [
+      pkgs.hyprlandPlugins.hyprspace
+    ];
+    settings = {
+      general.layout = "dwindle";
+    };
+    extraConfig = ""
   };
 
   # === Mako Config ===
@@ -39,8 +46,5 @@
     QT_WAYLAND_DISABLE_WINDOWDECORATION = "1";
     QT_AUTO_SCREEN_SCALE_FACTOR = "1";
     QT_QPA_PLATFORMTHEME = "qt6ct";
-
-    # Hyprland plugins
-    # HYPRSPACE = "${pkgs.hyprlandPlugins.hyprspace}/lib/hyprland/plugins/hyprspace.so";
   };
 }
