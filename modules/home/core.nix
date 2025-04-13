@@ -48,8 +48,6 @@
 
   # === Programs ===
 
-  programs.xfconf.enable = true;
-
   # Git config
   programs.git = {
     enable = true;
