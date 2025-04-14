@@ -25,6 +25,8 @@
     # === Programming ===
     go
     flutter
+    nixd
+    nixdoc
 
     # === Apps ===
     inputs.zen-browser.packages."${pkgs.system}".default
