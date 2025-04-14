@@ -37,6 +37,7 @@
     woeusb
     gale
     prismlauncher
+    zed-editor
 
     # === Ricing ===
     bibata-cursors
