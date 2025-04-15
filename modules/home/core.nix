@@ -35,7 +35,6 @@
     vscode
     deluge
     pwvucontrol
-    popsicle
     woeusb
     gale
     prismlauncher
