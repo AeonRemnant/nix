@@ -39,6 +39,7 @@
     gale
     prismlauncher
     zed-editor
+    pinta
 
     # === Ricing ===
     bibata-cursors
