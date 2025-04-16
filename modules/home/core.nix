@@ -21,6 +21,7 @@
     gource
     xfce.thunar-archive-plugin
     xfce.thunar-volman
+    nh
 
     # === Programming ===
     go
