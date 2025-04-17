@@ -8,7 +8,7 @@
     ../../modules/home/core.nix
     ../../modules/home/dotfiles.nix
     ../../modules/home/gaming.nix
-    ../../modules/home/hyprland.nix
+    # ../../modules/home/hyprland.nix
   ];
 
   # === System Config ===
@@ -20,4 +20,14 @@
   # Nix
   programs.home-manager.enable = true;
   home.stateVersion = "24.11";
+
+  # === Hyprland config ===
+  programs.hyprland = {
+    enable = true;
+    package = inputs.hyprland.packages.${pkgs.system}.hyprland;
+    xwayland.enable = true;
+    plugins = [
+      inputs.Hyprspace.packages.${pkgs.system}.Hyprspace
+    ];
+  };
 }
