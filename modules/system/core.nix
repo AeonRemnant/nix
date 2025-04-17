@@ -19,6 +19,7 @@
 
   # === System Packages ===
   environment.systemPackages = with pkgs; [
+    greetd.greetd
     flatpak
     git
     wget
