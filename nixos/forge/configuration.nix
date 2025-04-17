@@ -13,12 +13,13 @@
   ];
 
   # === Display Manager ===
-  services.displayManager.sddm = {
+  services.greetd = {
     enable = true;
-    wayland.enable = true;
-    autoLogin = {
-      enable = true;
-      user = "${username}";
+    settings = {
+      default_session = {
+        command = "${lib.getBin config.wayland.windowManager.hyprland.package}/bin/Hyprland";
+        user = "${username}";
+      };
     };
   };
 
