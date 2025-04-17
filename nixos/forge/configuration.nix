@@ -7,10 +7,19 @@
     inputs.home-manager.nixosModules.home-manager
     ./hardware-configuration.nix 
     ../../modules/system/core.nix 
-    ../../modules/system/hyprland.nix 
     ../../modules/system/nvidia.nix 
     ../../modules/system/gaming.nix 
   ];
+
+  # === Display Manager ===
+  services.displayManager.sddm = {
+    enable = true;
+    wayland.enable = true;
+    autoLogin = {
+      enable = true;
+      user = "${username}";
+    };
+  };
 
   # === System Config ===
   networking.hostName = "forge";
@@ -47,5 +56,12 @@
       home.homeDirectory = "/home/${username}";
       home.stateVersion = "24.11";
     };
+  };
+
+  # === Hyprland ===
+  wayland.windowManager.hyprland = {
+    enable = true;
+    package = inputs.hyprland.packages.${pkgs.system}.hyprland;
+    plugins = [ inputs.Hyprspace.packages.${pkgs.system}.Hyprspace ];
   };
 }
