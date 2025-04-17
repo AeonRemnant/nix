@@ -1,28 +1,19 @@
 { config, pkgs, lib, username, ... }:
 
 {
-  # === Login ===
-  xdg.portal = {
-    enable = true;
-    wlr.enable = true;
-    extraPortals = with pkgs; [
-        xdg-desktop-portal-wlr
-    ];
-  };
-
-  services = {
-  
-  xserver.enable = false;
+  environment.systemPackages = with pkgs; [
+    greetd.greetd
+    greetd.regreet
+  ];
 
   greetd = {
     enable = true;
-    package = pkgs.greetd.tuigreet;
+    package = pkgs.greetd.regreet;
     settings = {
-      initial_session = {
-        command = "${config.users.users.${username}.shell}";
+      default_session = {
+        command = "${pkgs.systemd}/bin/systemctl --user start graphical-session.target";
         user = "${username}";
       };
-    };
     };
   };
 }
