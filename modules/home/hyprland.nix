@@ -3,7 +3,6 @@
 {
   # === Packages ===
   home.packages = with pkgs; [
-    hyprlandPlugins.hyprspace
     hyprpaper
     hyprcursor
     mako
@@ -22,9 +21,9 @@
     enable = true;
     package = inputs.hyprland.packages.${pkgs.system}.hyprland;
     xwayland.enable = true;
-    # plugins = [
-    #   inputs.Hyprspace.packages.${pkgs.system}.Hyprspace
-    # ];
+    plugins = [
+      inputs.Hyprspace.packages.${pkgs.system}.Hyprspace
+    ];
   };
 
   # === Mako Config ===
