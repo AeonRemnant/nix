@@ -13,9 +13,6 @@
     nwg-look
   ];
 
-  # === Wayland config ===
-  wayland.windowManager.hyprland.enable = false;
-
   # === Hyprland config ===
   programs.hyprland = {
     enable = true;

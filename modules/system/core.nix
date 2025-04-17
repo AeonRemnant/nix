@@ -17,6 +17,9 @@
   };
   services.displayManager.defaultSession = "hyprland";
 
+  # === Wayland config ===
+  wayland.windowManager.hyprland.enable = false;
+
   # === System Packages ===
   environment.systemPackages = with pkgs; [
     flatpak
