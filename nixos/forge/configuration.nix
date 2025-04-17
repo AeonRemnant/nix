@@ -31,9 +31,6 @@
     shell = pkgs.nushell;
   };
 
-  # === Wayland config ===
-  wayland.windowManager.hyprland.enable = false;
-
   # === Home Manager ===
   home-manager = {
     useGlobalPkgs = true;
