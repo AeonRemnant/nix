@@ -17,9 +17,9 @@
   wayland.windowManager.hyprland = {
     enable = true;
     package = inputs.hyprland.packages.${pkgs.system}.hyprland;
-    plugins = [
-      inputs.Hyprspace.packages.${pkgs.system}.Hyprspace
-    ];
+    # plugins = [
+    #   inputs.Hyprspace.packages.${pkgs.system}.Hyprspace
+    # ];
   };
 
   # === Mako Config ===
