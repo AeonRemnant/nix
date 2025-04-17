@@ -12,17 +12,6 @@
     ../../modules/system/gaming.nix 
   ];
 
-  # === Display Manager ===
-  services.greetd = {
-    enable = true;
-    settings = {
-      default_session = {
-        command = "${lib.getBin config.wayland.windowManager.hyprland.package}/bin/Hyprland";
-        user = "${username}";
-      };
-    };
-  };
-
   # === System Config ===
   networking.hostName = "forge";
   system.stateVersion = "24.11";
