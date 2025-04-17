@@ -13,18 +13,6 @@
     nwg-look
   ];
 
-  # === Hyprland config ===
-  programs.hyprland = {
-    enable = true;
-    package = inputs.hyprland.packages.${pkgs.system}.hyprland;
-    xwayland = {
-      enable = true;
-    };
-    plugins = [
-      inputs.Hyprspace.packages.${pkgs.system}.Hyprspace
-    ];
-  };
-
   # === Mako Config ===
   services.mako = {
     defaultTimeout = 4000;
