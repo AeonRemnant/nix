@@ -18,7 +18,7 @@
     enable = true;
     settings = {
       default_session = {
-        command = "$HOME/.wayland-session";
+        command = "${lib.getBin config.wayland.windowManager.hyprland.package}/bin/Hyprland";
         user = "${username}";
         };
       };
