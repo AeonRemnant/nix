@@ -13,15 +13,15 @@
   #   };
   # };
 
-  services.greetd = {
+  services.displayManager.sddm = {
     enable = true;
-    settings = {
-      initial_session = {
-        user = "aeon";
-        command = "hyprland";
-      };
-    };
+    wayland.enable = true;
   };
+  services.displayManager.autoLogin = {
+    enable = true;
+    user = "aeon";
+  };
+  services.displayManager.defaultSession = "hyprland";
 
   # === System Packages ===
   environment.systemPackages = with pkgs; [

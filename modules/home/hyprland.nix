@@ -14,19 +14,6 @@
     nwg-look
   ];
 
-  # === Wayland Config ===
-  wayland.windowManager.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-    plugins = [
-      pkgs.hyprlandPlugins.hyprspace
-    ];
-    settings = {
-      general.layout = "dwindle";
-    };
-    extraConfig = "";
-  };
-
   # === Mako Config ===
   services.mako = {
     defaultTimeout = 4000;
