@@ -41,6 +41,7 @@
     prismlauncher
     zed-editor
     pinta
+    kdePackages.ark
 
     # === Ricing ===
     bibata-cursors
