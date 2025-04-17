@@ -4,7 +4,7 @@
   # === Imports ===
   imports = [
     inputs.nix-flatpak.homeManagerModules.nix-flatpak
-    # inputs.hyprland.homeManagerModules.default
+    inputs.hyprland.homeManagerModules.default
     ../../modules/home/core.nix
     ../../modules/home/dotfiles.nix
     ../../modules/home/gaming.nix
