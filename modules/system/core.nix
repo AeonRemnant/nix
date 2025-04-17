@@ -6,13 +6,7 @@
   time.timeZone = "Australia/Brisbane";
   i18n.defaultLocale = "en_AU.UTF-8";
 
-  # services.greetd = {
-  #   enable = true;
-  #   settings = {
-  #     default_session.command = "${pkgs.greetd.tuigreet}/bin/tuigreet";
-  #   };
-  # };
-
+  # === Display manager ===
   services.displayManager.sddm = {
     enable = true;
     wayland.enable = true;
@@ -80,4 +74,9 @@
   # Thunar
   services.gvfs.enable = true;
   services.tumbler.enable = true;
+
+  # === Boot Config ===
+  boot.extraModprobeConfig = ''
+    options snd_hda_intel power_save=0
+  '';
 }
