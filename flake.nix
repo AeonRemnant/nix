@@ -27,7 +27,6 @@
     # Hyprland support
     hyprland = {
       url = "github:hyprwm/Hyprland";
-      submodules = true;
       inputs.nixpkgs.follows = "nixpkgs";
     };
     hyprland-plugins = {
