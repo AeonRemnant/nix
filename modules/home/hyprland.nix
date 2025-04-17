@@ -5,7 +5,6 @@
   home.packages = with pkgs; [
     hyprlandPlugins.hyprspace
     hyprpaper
-    hyprls
     hyprcursor
     mako
     walker
@@ -15,9 +14,16 @@
     nwg-look
   ];
 
-  wayland.windowManager.hyprland = {
+  # === Wayland config ===
+  wayland.windowManager.hyprland.enable = false;
+
+  # === Hyprland config ===
+  programs.hyprland = {
+    enable = true;
+    package = inputs.hyprland.packages.${pkgs.system}.hyprland;
+    xwayland.enable = true;
     plugins = [
-      inputs.hyprland-plugins.packages.${pkgs.stdenv.hostPlatform.system}.hyprspace
+      inputs.Hyprspace.packages.${pkgs.system}.hyprspace
     ];
   };
 

@@ -7,7 +7,6 @@
     inputs.home-manager.nixosModules.home-manager
     ./hardware-configuration.nix 
     ../../modules/system/core.nix 
-    ../../modules/system/hyprland.nix 
     ../../modules/system/nvidia.nix 
     ../../modules/system/gaming.nix 
   ];
