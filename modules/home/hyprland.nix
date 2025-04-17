@@ -23,7 +23,7 @@
     package = inputs.hyprland.packages.${pkgs.system}.hyprland;
     xwayland.enable = true;
     plugins = [
-      inputs.Hyprspace.packages.${pkgs.system}.hyprspace
+      inputs.Hyprspace.packages.${pkgs.system}.Hyprspace
     ];
   };
 
