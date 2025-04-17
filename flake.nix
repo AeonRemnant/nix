@@ -27,6 +27,8 @@
     # Hyprland support
     hyprland = {
       url = "github:hyprwm/Hyprland";
+      submodules = true;
+      inputs.nixpkgs.follows = "nixpkgs";
     };
     hyprland-plugins = {
       url = "github:hyprwm/hyprland-plugins";
@@ -39,7 +41,7 @@
   };
 
   # === Outputs ===
-  outputs = { self, nixpkgs, home-manager, nix-flatpak, hyprland, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, nix-flatpak, ... }@inputs:
     let
       # === Common Variables ===
       systemName = "forge";
