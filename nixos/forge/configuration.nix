@@ -8,6 +8,7 @@
     inputs.hyprland.nixosModules.default
     ./hardware-configuration.nix 
     ../../modules/system/core.nix 
+    ../../modules/system/login.nix 
     ../../modules/system/nvidia.nix 
     ../../modules/system/gaming.nix 
   ];
