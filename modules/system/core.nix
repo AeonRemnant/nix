@@ -6,17 +6,6 @@
   time.timeZone = "Australia/Brisbane";
   i18n.defaultLocale = "en_AU.UTF-8";
 
-  # === Display Manager ===
-  services.greetd = {
-    enable = true;
-    settings = {
-      default_session = {
-        command = "${lib.getBin config.wayland.windowManager.hyprland.package}/bin/Hyprland";
-        user = "${username}";
-      };
-    };
-  };
-
   # === System Packages ===
   environment.systemPackages = with pkgs; [
     greetd.greetd
