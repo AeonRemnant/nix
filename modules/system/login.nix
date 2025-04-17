@@ -16,12 +16,13 @@
 
   greetd = {
     enable = true;
+    package = pkgs.greetd.tuigreet;
     settings = {
-      default_session = {
-        command = "${lib.getBin config.wayland.windowManager.hyprland.package}/bin/Hyprland";
+      initial_session = {
+        command = "${config.users.users.${username}.shell}";
         user = "${username}";
-        };
       };
+    };
     };
   };
 }
