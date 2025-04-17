@@ -17,7 +17,9 @@
   programs.hyprland = {
     enable = true;
     package = inputs.hyprland.packages.${pkgs.system}.hyprland;
-    xwayland.enable = true;
+    xwayland = {
+      enable = true;
+    };
     plugins = [
       inputs.Hyprspace.packages.${pkgs.system}.Hyprspace
     ];
