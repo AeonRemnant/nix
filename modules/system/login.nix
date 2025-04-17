@@ -6,7 +6,7 @@
     greetd.regreet
   ];
 
-  greetd.greetd = {
+  services.greetd = {
     enable = true;
     package = pkgs.greetd.regreet;
     settings = {
