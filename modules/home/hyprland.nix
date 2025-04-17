@@ -17,7 +17,7 @@
 
   wayland.windowManager.hyprland = {
     plugins = [
-      inputs.Hyprspace.packages.${pkgs.system}.Hyprspace
+      inputs.hyprland-plugins.packages.${pkgs.stdenv.hostPlatform.system}.hyprspace
     ];
   };
 
