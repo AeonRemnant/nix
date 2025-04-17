@@ -1,12 +1,16 @@
 { config, pkgs, lib, ... }:
 
 {
+  # === System Packages ===
+  environment.systemPackages = with pkgs; [
+    hyprlandPlugins.hyprspace
+  ];
+
   # === Hyprland config ===
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
-    extraConfig = ''
-      plugin = ${pkgs.hyprlandPlugins.hyprspace}/lib/hyprland/plugins/hyprspace.so
-    '';
+    package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
+    portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
   };
 }

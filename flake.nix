@@ -3,20 +3,32 @@
 
   # === Inputs ===
   inputs = {
+
+    # Base nixpkgs url
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
+    # Home manager support
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # === Application-specific Flakes ===
+    # Zen Browser until it gets a dedicated nixpkg
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    # Flatpak support
     nix-flatpak = {
       url = "github:gmodena/nix-flatpak";
+    };
+
+    # Hyprland support
+    hyprland.url = "github:hyprwm/Hyprland";
+    hyprland-plugins = {
+    url = "github:hyprwm/hyprland-plugins";
+    inputs.hyprland.follows = "hyprland";
     };
   };
 
