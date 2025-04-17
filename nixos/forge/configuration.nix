@@ -5,6 +5,7 @@
   # === Imports ===
   imports = [
     inputs.home-manager.nixosModules.home-manager
+    inputs.hyprland.nixosModules.default
     ./hardware-configuration.nix 
     ../../modules/system/core.nix 
     ../../modules/system/nvidia.nix 
@@ -56,12 +57,5 @@
       home.homeDirectory = "/home/${username}";
       home.stateVersion = "24.11";
     };
-  };
-
-  # === Hyprland ===
-  wayland.windowManager.hyprland = {
-    enable = true;
-    package = inputs.hyprland.packages.${pkgs.system}.hyprland;
-    plugins = [ inputs.Hyprspace.packages.${pkgs.system}.Hyprspace ];
   };
 }
