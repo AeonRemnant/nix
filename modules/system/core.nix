@@ -80,7 +80,4 @@
   # Thunar
   services.gvfs.enable = true;
   services.tumbler.enable = true;
-
-  # Hyprland config
-  programs.hyprland.enable = false; # Handled in home manager
 }
