@@ -42,6 +42,7 @@
     zed-editor
     pinta
     kdePackages.ark
+    firejail
 
     # === Ricing ===
     bibata-cursors
