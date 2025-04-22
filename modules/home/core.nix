@@ -22,7 +22,6 @@
     xfce.thunar-archive-plugin
     xfce.thunar-volman
     nh
-    clan-core
 
     # === Programming ===
     go
