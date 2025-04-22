@@ -46,7 +46,7 @@
       userServices = false;
       workstation = false;
     };
-
+  };
 
   nix.settings = {
     substituters = ["https://nix-gaming.cachix.org"];
