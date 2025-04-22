@@ -22,6 +22,7 @@
     xfce.thunar-archive-plugin
     xfce.thunar-volman
     nh
+    colmena
 
     # === Programming ===
     go
