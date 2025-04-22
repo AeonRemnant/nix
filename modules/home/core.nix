@@ -55,6 +55,8 @@
 
   # === Programs ===
 
+  services.avahi.enable = true;
+
   # Git config
   programs.git = {
     enable = true;
