@@ -35,7 +35,18 @@
     config.common.default = "*";
   };
 
-  services.avahi.enable = true;
+  services.avahi = {
+    enable = true;
+    nssmdns = true;
+    publish = {
+      enable = true;
+      addresses = true;
+      domain = true;
+      hinfo = false;
+      userServices = false;
+      workstation = false;
+    };
+
 
   nix.settings = {
     substituters = ["https://nix-gaming.cachix.org"];
