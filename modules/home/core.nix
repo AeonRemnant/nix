@@ -44,6 +44,7 @@
     pinta
     kdePackages.ark
     firejail
+    signal-desktop
 
     # === Ricing ===
     bibata-cursors
