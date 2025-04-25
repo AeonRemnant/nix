@@ -21,14 +21,15 @@
     gource
     xfce.thunar-archive-plugin
     xfce.thunar-volman
-    nh
-    colmena
 
     # === Programming ===
     go
     flutter
     nixd
     nixdoc
+    colmena
+    salt
+    salt-lint
 
     # === Apps ===
     inputs.zen-browser.packages."${pkgs.system}".default
