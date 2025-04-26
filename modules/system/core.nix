@@ -22,6 +22,8 @@
     btrfs-progs
     nvfancontrol
     xfce.thunar
+    salt
+    salt-lint
   ];
 
   fonts.packages = with pkgs; [

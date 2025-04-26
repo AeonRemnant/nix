@@ -28,8 +28,6 @@
     nixd
     nixdoc
     colmena
-    salt
-    salt-lint
 
     # === Apps ===
     inputs.zen-browser.packages."${pkgs.system}".default
