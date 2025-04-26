@@ -10,7 +10,10 @@
   nixpkgs.overlays = [
     (final: prev: {
       salt = prev.salt.overrideAttrs (oldAttrs: {
-        propagatedBuildInputs = oldAttrs.propagatedBuildInputs ++ [ final.python3Packages.ipy ];
+        propagatedBuildInputs = oldAttrs.propagatedBuildInputs ++ [ 
+          final.python3Packages.ipy 
+          final.python3Packages.saltext-proxmox
+          ];
       });
     })
   ];
