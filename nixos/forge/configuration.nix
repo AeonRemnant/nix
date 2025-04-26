@@ -10,7 +10,8 @@
     ../../modules/system/core.nix 
     ../../modules/system/login.nix 
     ../../modules/system/nvidia.nix 
-    ../../modules/system/gaming.nix 
+    ../../modules/system/gaming.nix
+    ../../modules/system/saltstack.nix 
   ];
 
   # === System Config ===

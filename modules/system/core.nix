@@ -21,9 +21,7 @@
     vulkan-tools
     btrfs-progs
     nvfancontrol
-    xfce.thunar
-    salt
-    salt-lint
+    xfce.thunars
   ];
 
   fonts.packages = with pkgs; [
