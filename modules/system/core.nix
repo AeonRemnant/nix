@@ -22,6 +22,9 @@
     btrfs-progs
     nvfancontrol
     xfce.thunar
+
+    # === Programming ===
+    python312Packages.ipy
   ];
 
   fonts.packages = with pkgs; [
