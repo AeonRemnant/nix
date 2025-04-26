@@ -21,7 +21,7 @@
     vulkan-tools
     btrfs-progs
     nvfancontrol
-    xfce.thunars
+    xfce.thunar
   ];
 
   fonts.packages = with pkgs; [
