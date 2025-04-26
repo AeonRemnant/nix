@@ -6,6 +6,15 @@
     salt-lint
     python3Packages.ipy
   ];
+
+  nixpkgs.overlays = [
+    (final: prev: {
+      salt = prev.salt.overrideAttrs (oldAttrs: {
+        propagatedBuildInputs = oldAttrs.propagatedBuildInputs ++ [ final.python3Packages.ipy ];
+      });
+    })
+  ];
+
   services.salt.master = {
     enable = true;
     configuration = {
