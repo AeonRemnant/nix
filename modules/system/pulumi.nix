@@ -5,6 +5,6 @@
     pulumi
     pulumictl
     pulumi-esc
-    pulumi-go
+    pulumiPackages.pulumi-go
   ];
 }
