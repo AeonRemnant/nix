@@ -5,5 +5,6 @@
     pulumi
     pulumictl
     pulumi-esc
+    pulumi-go
   ];
 }
