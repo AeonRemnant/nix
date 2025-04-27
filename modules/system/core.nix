@@ -1,7 +1,6 @@
-{ config, pkgs, lib, username, ... }: 
+{ config, pkgs, lib, username, ... }:
 
 {
-
   # === Basic System Setup ===
   time.timeZone = "Australia/Brisbane";
   i18n.defaultLocale = "en_AU.UTF-8";
