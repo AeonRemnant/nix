@@ -21,6 +21,7 @@
     gource
     xfce.thunar-archive-plugin
     xfce.thunar-volman
+    libsecret
 
     # === Programming ===
     go
