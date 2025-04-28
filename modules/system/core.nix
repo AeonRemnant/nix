@@ -21,6 +21,7 @@
     btrfs-progs
     nvfancontrol
     xfce.thunar
+    nixos-anywhere
   ];
 
   fonts.packages = with pkgs; [
