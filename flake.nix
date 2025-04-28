@@ -35,12 +35,13 @@
       inputs.hyprland.follows = "hyprland";
     };
 
-    # Gaming
-    nix-gaming.url = "github:fufexan/nix-gaming";
+    # Cosmic support
+    nixpkgs.follows = "nixos-cosmic/nixpkgs";
+    nixos-cosmic.url = "github:lilyinstarlight/nixos-cosmic";
   };
 
   # === Outputs ===
-  outputs = { self, nixpkgs, home-manager, nix-flatpak, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, nix-flatpak, nixos-cosmic, ... }@inputs:
     let
       # === Common Variables ===
       systemName = "forge";
@@ -71,7 +72,12 @@
           modules = [
             # === Core System Configuration File ===
             ./nixos/${systemName}/configuration.nix
-
+            {
+            nix.settings = {
+              substituters = [ "https://cosmic.cachix.org/" ];
+              trusted-public-keys = [ "cosmic.cachix.org-1:Dya9IyXD4xdBehWjrkPv6rtxpmMdRel02smYzA85dPE=" ];
+              };
+            }
             # === Third-Party NixOS Modules ===
             inputs.nix-flatpak.nixosModules.nix-flatpak
             inputs.home-manager.nixosModules.home-manager
