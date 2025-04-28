@@ -11,7 +11,6 @@
     ../../modules/system/login.nix 
     ../../modules/system/nvidia.nix 
     ../../modules/system/gaming.nix
-    ../../modules/system/pulumi.nix 
   ];
 
   # === System Config ===
