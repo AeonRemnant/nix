@@ -32,6 +32,7 @@
     # === Apps ===
     inputs.zen-browser.packages."${pkgs.system}".default
     vesktop
+    goofcord
     plex-desktop
     vscode
     deluge
