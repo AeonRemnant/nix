@@ -25,7 +25,7 @@
     };
 
     # Hyprland support
-    hyprland.url = "github:hyprwm/Hyprland";
+    hyprland.url = "github:/hyprwm/Hyprland?submodules=1&ref=v0.48.0";
     hyprland-plugins = {
       url = "github:hyprwm/hyprland-plugins";
       inputs.hyprland.follows = "hyprland";
@@ -34,14 +34,14 @@
       url = "github:KZDKM/Hyprspace";
       inputs.hyprland.follows = "hyprland";
     };
-
-    # Cosmic support
-    nixpkgs.follows = "nixos-cosmic/nixpkgs";
-    nixos-cosmic.url = "github:lilyinstarlight/nixos-cosmic";
+    hy3 = {
+      url = "github:outfoxxed/hy3?ref=hl0.48.0";
+      inputs.hyprland.follows = "hyprland";
+    };
   };
 
   # === Outputs ===
-  outputs = { self, nixpkgs, home-manager, nix-flatpak, nixos-cosmic, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, nix-flatpak, hy3, ... }@inputs:
     let
       # === Common Variables ===
       systemName = "forge";
@@ -63,7 +63,6 @@
         "${systemName}" = lib.nixosSystem {
           system = systemArch;
 
-
           specialArgs = {
             inherit inputs username;
             flakeRoot = ./.;
@@ -74,10 +73,17 @@
             ./nixos/${systemName}/configuration.nix
             {
             nix.settings = {
-              substituters = [ "https://cosmic.cachix.org/" ];
-              trusted-public-keys = [ "cosmic.cachix.org-1:Dya9IyXD4xdBehWjrkPv6rtxpmMdRel02smYzA85dPE=" ];
+              substituters = [ 
+                "https://cache.nixos.org/"
+                "https://hyprland.cachix.org"
+                ];
+              trusted-public-keys = [
+                "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
+                "hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="
+                ];
               };
             }
+
             # === Third-Party NixOS Modules ===
             inputs.nix-flatpak.nixosModules.nix-flatpak
             inputs.home-manager.nixosModules.home-manager

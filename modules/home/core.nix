@@ -25,7 +25,6 @@
 
     # === Programming ===
     go
-    flutter
     nixd
     nixdoc
     colmena
@@ -45,6 +44,7 @@
     kdePackages.ark
     firejail
     signal-desktop-bin
+    simplex-chat-desktop
 
     # === Ricing ===
     bibata-cursors

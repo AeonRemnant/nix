@@ -13,10 +13,10 @@
     # === Nvidia Driver Config ===
     hardware.nvidia = {
       modesetting.enable = true;
-      powerManagement.enable = true;
+      powerManagement.enable = false;
       open = false;
       # Options: latest, stable, beta.
-      package = config.boot.kernelPackages.nvidiaPackages.beta;
+      package = config.boot.kernelPackages.nvidiaPackages.latest;
     };
     
     # === Compatibility ===

@@ -1,10 +1,11 @@
-{ config, pkgs, lib, inputs, ... }:
+{ config, pkgs, lib, inputs, hy3, ... }:
 
 {
   # === Packages ===
   home.packages = with pkgs; [
     hyprpaper
     hyprcursor
+    hy3
     mako
     walker
     grim
@@ -17,9 +18,9 @@
   wayland.windowManager.hyprland = {
     enable = true;
     package = inputs.hyprland.packages.${pkgs.system}.hyprland;
-    # plugins = [
-    #   inputs.Hyprspace.packages.${pkgs.system}.Hyprspace
-    # ];
+    extraConfig = ''
+      plugin = ${hy3.packages.x86_64-linux.hy3}/lib/libhy3.so
+    '';
   };
 
   # === Mako Config ===

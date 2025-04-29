@@ -35,19 +35,6 @@
     config.common.default = "*";
   };
 
-  services.avahi = {
-    enable = true;
-    nssmdns = true;
-    publish = {
-      enable = true;
-      addresses = true;
-      domain = true;
-      hinfo = false;
-      userServices = false;
-      workstation = false;
-    };
-  };
-
   nix.settings = {
     substituters = ["https://nix-gaming.cachix.org"];
     trusted-public-keys = ["nix-gaming.cachix.org-1:nbjlureqMbRAxR1gJ/f3hxemL9svXaZF/Ees8vCUUs4="];
