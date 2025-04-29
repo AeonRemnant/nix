@@ -12,6 +12,7 @@
     slurp
     wl-clipboard
     nwg-look
+    swww
   ];
 
   # === Hyprland ===

@@ -22,6 +22,7 @@
     nvfancontrol
     xfce.thunar
     nixos-anywhere
+    easyeffects
   ];
 
   fonts.packages = with pkgs; [
