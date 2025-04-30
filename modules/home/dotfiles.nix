@@ -16,6 +16,11 @@
       source = flakeRoot + "/home/aeon/dotfiles/walker";
       recursive = true;
     };
+
+    ".config/ghostty" = {
+      source = flakeRoot + "/home/aeon/dotfiles/ghostty";
+      recursive = true;
+    };
   };
 
 
