@@ -65,7 +65,7 @@
           system = systemArch;
 
           specialArgs = {
-            inherit inputs username;
+            inherit inputs chaotic username;
             flakeRoot = ./.;
           };
 
