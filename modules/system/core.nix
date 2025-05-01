@@ -23,6 +23,7 @@
     xfce.thunar
     nixos-anywhere
     easyeffects
+    xdg-utils
   ];
 
   fonts.packages = with pkgs; [
