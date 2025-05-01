@@ -12,7 +12,7 @@
     ../../modules/system/nvidia.nix 
     ../../modules/system/gaming.nix
     ../../modules/system/ports.nix
-    ../../modules/system/chaotic.nix
+    ../../modules/system/kernel.nix
   ];
 
   # === System Config ===
