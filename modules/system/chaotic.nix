@@ -2,8 +2,8 @@
 
 {
   # === Chaotic System Packages ===
-  environment.systemPackages = with chaotic; [
-    linuxPackages_cachyos-rc
+  environment.systemPackages = [
+    chaotic.linuxPackages_cachyos-rc
   ];
 
   boot.kernelPackages = chaotic.linuxPackages_cachyos-rc;
