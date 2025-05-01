@@ -6,6 +6,7 @@
 
     # Base nixpkgs url
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
 
     # Home manager support
     home-manager = {
@@ -41,7 +42,7 @@
   };
 
   # === Outputs ===
-  outputs = { self, nixpkgs, home-manager, nix-flatpak, hy3, ... }@inputs:
+  outputs = { self, nixpkgs, chaotic, home-manager, nix-flatpak, hy3, ... }@inputs:
     let
       # === Common Variables ===
       systemName = "forge";
@@ -71,6 +72,7 @@
           modules = [
             # === Core System Configuration File ===
             ./nixos/${systemName}/configuration.nix
+            chaotic.nixosModules.default
             {
             nix.settings = {
               substituters = [ 
