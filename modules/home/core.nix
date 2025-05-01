@@ -46,6 +46,7 @@
     firejail
     signal-desktop-bin
     simplex-chat-desktop
+    windsurf
 
     # === Ricing ===
     bibata-cursors

@@ -4,6 +4,6 @@
   networking.firewall = {
     enable = true;
     allowedTCPPorts = [ ];
-    allowedUDPPorts = [ 35165 ];
+    allowedUDPPorts = [ ];
   };
 }
