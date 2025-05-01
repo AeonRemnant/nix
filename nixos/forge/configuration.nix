@@ -13,6 +13,7 @@
     ../../modules/system/gaming.nix
     ../../modules/system/ports.nix
     ../../modules/system/kernel.nix
+    ../../modules/system/test.nix
   ];
 
   # === System Config ===
