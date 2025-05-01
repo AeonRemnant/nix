@@ -1,5 +1,5 @@
 # === Arguments ===
-{ config, pkgs, inputs, username, lib, flakeRoot, ... }:
+{ config, pkgs, chaotic, inputs, username, lib, flakeRoot, ... }:
 
 {
   # === Imports ===
