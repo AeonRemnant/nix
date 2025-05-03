@@ -16,7 +16,7 @@
       powerManagement.enable = false;
       open = false;
       # Options: latest, stable, beta.
-      package = config.boot.kernelPackages.nvidiaPackages.latest;
+      package = config.boot.kernelPackages.nvidiaPackages.stable;
     };
     
     # === Compatibility ===
@@ -26,4 +26,4 @@
       GBM_BACKEND = "nvidia-drm";
     };
   };
-}
+} 
