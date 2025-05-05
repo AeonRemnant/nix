@@ -3,6 +3,9 @@
 {
   environment.systemPackages = with pkgs; [
     gamemode
+
+    # Modloaders
+    r2modman
   ];
 
   # === Gamemode === 
