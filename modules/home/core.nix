@@ -48,7 +48,6 @@
     signal-desktop-bin
     simplex-chat-desktop
     windsurf
-    firefox-unwrapped
 
     # === Ricing ===
     bibata-cursors
