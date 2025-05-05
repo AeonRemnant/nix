@@ -42,7 +42,7 @@
   };
 
   # === Outputs ===
-  outputs = { self, nixpkgs, chaotic, home-manager, nix-flatpak, hy3, ... }@inputs:
+  outputs = { nixpkgs, chaotic, home-manager, nix-flatpak, ... }@inputs:
     let
       # === Common Variables ===
       systemName = "forge";

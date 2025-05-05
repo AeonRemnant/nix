@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, username, flakeRoot, ... }: {
+{ pkgs, flakeRoot, ... }: {
 
   # === Dotfile Management ===
   home.file = {

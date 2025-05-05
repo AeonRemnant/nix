@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, username, hy3, ... }:
+{ inputs, username, hy3, ... }:
 
 {
   _module.args = {

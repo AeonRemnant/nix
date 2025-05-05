@@ -1,4 +1,4 @@
-{ config, pkgs, lib, inputs, hy3, ... }:
+{ pkgs, inputs, hy3, ... }:
 
 {
   # === Packages ===
