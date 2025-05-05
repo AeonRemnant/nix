@@ -28,6 +28,7 @@
     nixd
     nixdoc
     colmena
+    deadnix
 
     # === Apps ===
     inputs.zen-browser.packages."${pkgs.system}".default
