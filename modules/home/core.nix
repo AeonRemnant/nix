@@ -47,7 +47,12 @@
     firejail
     signal-desktop-bin
     simplex-chat-desktop
+
+    # Wine
     wine64Packages.unstable
+    wine-fonts
+    winetricks
+    mono
 
     # === Ricing ===
     bibata-cursors
