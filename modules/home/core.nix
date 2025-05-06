@@ -47,7 +47,6 @@
     firejail
     signal-desktop-bin
     simplex-chat-desktop
-    winePackages.unstable
     wine64Packages.unstable
 
     # === Ricing ===
