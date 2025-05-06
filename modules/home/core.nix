@@ -50,7 +50,6 @@
 
     # Wine
     wine64Packages.unstable
-    wine-fonts
     winetricks
     mono
 
