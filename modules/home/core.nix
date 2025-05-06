@@ -47,7 +47,8 @@
     firejail
     signal-desktop-bin
     simplex-chat-desktop
-    windsurf
+    winePackages.unstable
+    wine64Packages.unstable
 
     # === Ricing ===
     bibata-cursors
