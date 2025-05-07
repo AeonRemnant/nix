@@ -51,6 +51,7 @@
     # Wine
     wine64Packages.unstable
     winetricks
+    protontricks
     mono
 
     # === Ricing ===
