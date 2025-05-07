@@ -53,6 +53,7 @@
     winetricks
     protontricks
     mono
+    bottles
 
     # === Ricing ===
     bibata-cursors
