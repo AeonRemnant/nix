@@ -6,4 +6,3 @@ $env.EDITOR = 'hx'
 use commands/ *
 
 alias shutdown = shutdown now
-alias reboot = reboot now
