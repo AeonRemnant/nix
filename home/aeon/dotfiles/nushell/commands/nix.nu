@@ -1,4 +1,3 @@
-# Updates Nix config git and rebuilds.
 export def rebuild [] {
     print "Changing directory to ~/.config/nix"
     cd ~/.config/nix
