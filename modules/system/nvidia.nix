@@ -16,7 +16,7 @@
       powerManagement.enable = false;
       open = false;
       # Options: latest, stable, beta.
-      package = config.boot.kernelPackages.nvidiaPackages.stable;
+      package = config.boot.kernelPackages.nvidiaPackages.beta;
     };
     
     # === Compatibility ===
