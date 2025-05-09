@@ -47,6 +47,7 @@
     firejail
     signal-desktop-bin
     simplex-chat-desktop
+    adoptopenjdk-icedtea-web
 
     # Wine
     wine64Packages.unstable
