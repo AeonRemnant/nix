@@ -37,6 +37,10 @@
    ];
  };
 
+  systemd.tmpfiles.rules = [
+    "d /flame 0775 aeon users - - "
+  ];
+
   swapDevices = [ ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking

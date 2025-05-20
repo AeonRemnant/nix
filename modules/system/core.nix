@@ -71,4 +71,7 @@
   boot.extraModprobeConfig = ''
     options snd_hda_intel power_save=0
   '';
+
+  # === Kernel Settings ===
+  boot.kernelPackages = pkgs.linuxPackages_cachyos;
 }
