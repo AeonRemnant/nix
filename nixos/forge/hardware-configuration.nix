@@ -24,18 +24,18 @@
       options = [ "fmask=0077" "dmask=0077" ];
     };
 
-  fileSystems."/flame" = {
-    device = "/dev/disk/by-uuid/1e242e89-6e6c-494f-ac90-5a4b048e6370";
-    fsType = "btrfs";
-    options = [
-      "defaults"
-      "compress=zstd:3"
-      "noatime"
-      "space_cache=v2"
-      "ssd"
-      "discard=async"
-    ];
-  };
+ fileSystems."/flame" = {
+   device = "/dev/disk/by-uuid/2b9270c0-1b35-40e0-a565-0586289edf26";
+   fsType = "btrfs";
+   options = [
+     "defaults"
+     "compress=zstd:3"
+     "noatime"
+     "space_cache=v2"
+     "ssd"
+     "discard=async"
+   ];
+ };
 
   swapDevices = [ ];
 
