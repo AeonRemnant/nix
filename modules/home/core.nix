@@ -42,6 +42,7 @@
     gale
     prismlauncher
     zed-editor
+    windsurf
     pinta
     kdePackages.ark
     firejail
