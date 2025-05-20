@@ -24,6 +24,19 @@
       options = [ "fmask=0077" "dmask=0077" ];
     };
 
+  fileSystems."/flame" = {
+    device = "/dev/disk/by-uuid/1e242e89-6e6c-494f-ac90-5a4b048e6370";
+    fsType = "btrfs";
+    options = [
+      "defaults"
+      "compress=zstd:3"
+      "noatime"
+      "space_cache=v2"
+      "ssd"
+      "discard=async"
+    ];
+  };
+
   swapDevices = [ ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
