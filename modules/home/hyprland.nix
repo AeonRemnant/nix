@@ -7,7 +7,6 @@
     hyprcursor
     hy3
     mako
-    walker
     rofi-wayland
     rofi-emoji
 

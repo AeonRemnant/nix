@@ -12,11 +12,6 @@
       recursive = true;
     };
 
-    ".config/walker" = {
-      source = flakeRoot + "/home/aeon/dotfiles/walker";
-      recursive = true;
-    };
-
     ".config/rofi" = {
       source = flakeRoot + "/home/aeon/dotfiles/rofi";
       recursive = true;
