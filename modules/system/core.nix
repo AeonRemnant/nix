@@ -65,7 +65,6 @@
   # Thunar
   services.gvfs.enable = true;
   services.tumbler.enable = true;
-
   # === Boot Config ===
   boot.extraModprobeConfig = ''
     options snd_hda_intel power_save=0

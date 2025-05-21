@@ -32,7 +32,8 @@
     isNormalUser = true;
     description = "aeon";
     extraGroups = [ "networkmanager" "wheel" "video" "input" ];
-    shell = pkgs.nushell;
+    shell = pkgs.fish;
+    ignoreShellProgramCheck = true;
   };
 
   # === Home Manager ===
