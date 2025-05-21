@@ -4,14 +4,8 @@ configuration {
     ssh-client: "ssh";
     drun-use-desktop-entries: true;
     show-icons: true;
-    icon-theme: "Papirus"; /* Or your preferred icon theme */
+    icon-theme: "Papirus";
     display-drun: "Applications";
     display-ssh: "SSH";
     sidebar-mode: true;
-
-    /* Keybindings */
-    kb-mode-next: "Right";
-    kb-mode-previous: "Left";
 }
-
-@theme "material_theme"
