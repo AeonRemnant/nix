@@ -12,15 +12,13 @@
 (straight-use-package 'use-package)
 (setq straight-use-package-by-default t)
 
-;; UI settings
 (setq inhibit-startup-message t)
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 
-;; Default font
-(set-face-attribute 'default nil :font "JetBrains Mono Nerd Font Mono" :height 100)
-(add-to-list 'default-frame-alist '(font . "JetBrains Mono Nerd Font Mono-10"))
+(set-face-attribute 'default nil :font "Fira Code" :height 100)
+(add-to-list 'default-frame-alist '(font . "Fira Code"))
 
 (use-package magit
   :commands (magit-status magit-get-current-branch)
