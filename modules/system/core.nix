@@ -73,6 +73,6 @@
   '';
 
   # === Kernel Settings ===
-  boot.kernelPackages = pkgs.linuxPackages_cachyos;
-  services.scx.enable = true;
+  # boot.kernelPackages = pkgs.linuxPackages_cachyos;
+  # services.scx.enable = true;
 }
