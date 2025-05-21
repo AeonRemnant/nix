@@ -21,6 +21,11 @@
       source = flakeRoot + "/home/aeon/dotfiles/ghostty";
       recursive = true;
     };
+    
+    ".config/emacs" = {
+      source = flakeRoot + "/home/aeon/dotfiles/emacs";
+      recursive = true;
+    };
   };
 
 

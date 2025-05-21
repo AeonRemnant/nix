@@ -1,8 +1,8 @@
 { pkgs, inputs, ... }: 
 
 {
-    programs.spacemacs = {
+    programs.emacs = {
         enable = true;
-        package = pkgs.spacemacs;
+        package = pkgs.emacs;
     };
 }

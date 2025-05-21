@@ -12,6 +12,7 @@
     ../../modules/home/dotfiles.nix
     ../../modules/home/gaming.nix
     ../../modules/home/hyprland.nix 
+    ../../modules/home/emacs.nix
   ];
 
   # Home
