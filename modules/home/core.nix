@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }: 
+{ pkgs, inputs, ... }:
 
 {
   home.packages = with pkgs; [
@@ -21,6 +21,7 @@
     xfce.thunar-archive-plugin
     xfce.thunar-volman
     libsecret
+    emacs
 
     # === Programming ===
     go

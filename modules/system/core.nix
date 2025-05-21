@@ -26,8 +26,13 @@
     xdg-utils
   ];
 
-  fonts.packages = with pkgs; [
+fonts.packages = with pkgs; [
     fira-code
+    noto-fonts-color-emoji
+
+    # Fallbacks
+    noto-fonts
+    noto-fonts-cjk
   ];
 
   # === System Settings ===
