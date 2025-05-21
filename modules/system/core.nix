@@ -32,7 +32,7 @@ fonts.packages = with pkgs; [
 
     # Fallbacks
     noto-fonts
-    noto-fonts-cjk
+    noto-fonts-cjk-sans
   ];
 
   # === System Settings ===
