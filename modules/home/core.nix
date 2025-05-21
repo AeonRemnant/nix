@@ -5,8 +5,7 @@
 
     # === Terminal + Shell ===
     ghostty
-    nushell
-    nushellPlugins.highlight
+    fish
 
     # === Tools ===
     neofetch

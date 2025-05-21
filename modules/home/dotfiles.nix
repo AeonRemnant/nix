@@ -7,8 +7,8 @@
       recursive = true;
     };
 
-    ".config/nushell" = {
-      source = flakeRoot + "/home/aeon/dotfiles/nushell";
+    ".config/fish" = {
+      source = flakeRoot + "/home/aeon/dotfiles/fish";
       recursive = true;
     };
 
