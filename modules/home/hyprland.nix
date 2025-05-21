@@ -8,6 +8,9 @@
     hy3
     mako
     walker
+    rofi-wayland
+    rofi-emoji
+
     grim
     slurp
     wl-clipboard
@@ -25,7 +28,7 @@
 
   # === Mako Config ===
   services.mako = {
-    defaultTimeout = 4000;
+    settings.default-timeout = 4000;
   };
 
   # === Services ===

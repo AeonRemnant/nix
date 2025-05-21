@@ -26,4 +26,4 @@
       GBM_BACKEND = "nvidia-drm";
     };
   };
-} 
+}

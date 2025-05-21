@@ -17,6 +17,11 @@
       recursive = true;
     };
 
+    ".config/rofi" = {
+      source = flakeRoot + "/home/aeon/dotfiles/rofi";
+      recursive = true;
+    };
+
     ".config/ghostty" = {
       source = flakeRoot + "/home/aeon/dotfiles/ghostty";
       recursive = true;

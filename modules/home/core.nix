@@ -29,6 +29,8 @@
     nixdoc
     colmena
     deadnix
+    nodejs_24
+    python314
 
     # === Apps ===
     inputs.zen-browser.packages."${pkgs.system}".default

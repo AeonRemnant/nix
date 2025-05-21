@@ -1,0 +1,11 @@
+configuration {
+  modi: "drun,window,run,ssh,emoji";
+  show-icons: true;
+  icon-theme: "Papirus";
+  display-drun: "";
+  display-run: "";
+  display-emoji: "😀";
+  drun-display-format: "{name}";
+  disable-history: false;
+  sidebar-mode: false;
+}
