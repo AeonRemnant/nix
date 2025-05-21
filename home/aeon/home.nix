@@ -13,6 +13,7 @@
     ../../modules/home/gaming.nix
     ../../modules/home/hyprland.nix 
     ../../modules/home/emacs.nix
+    ../../modules/home/nushell.nix
   ];
 
   # Home

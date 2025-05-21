@@ -59,7 +59,6 @@
   services.flatpak.enable = true;
   services.flatpak.update.onActivation = true;
   # System
-  services.openssh.enable = true;
   services.dbus.enable = true;
   networking.networkmanager.enable = true;
   services.upower.enable = true;
