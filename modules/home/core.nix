@@ -6,6 +6,7 @@
     # === Terminal + Shell ===
     ghostty
     fish
+    oh-my-fish
 
     # === Tools ===
     neofetch
@@ -34,17 +35,15 @@
 
     # === Apps ===
     inputs.zen-browser.packages."${pkgs.system}".default
-    vesktop
     goofcord
     plex-desktop
     vscode
     deluge
     pwvucontrol
     woeusb
-    gale
     prismlauncher
     zed-editor
-    windsurf
+    code-cursor
     pinta
     kdePackages.ark
     firejail

@@ -26,7 +26,7 @@
     xdg-utils
   ];
 
-fonts.packages = with pkgs; [
+  fonts.packages = with pkgs; [
     fira-code
     noto-fonts-color-emoji
 
@@ -39,7 +39,14 @@ fonts.packages = with pkgs; [
   xdg.portal = {
     enable = true;
     extraPortals = [ pkgs.xdg-desktop-portal-hyprland pkgs.xdg-desktop-portal-gtk ];
-    config.common.default = "*";
+    config = {
+      common.default = [ "gtk" "hyprland" ];
+      xdg-desktop-portal-gtk.default = [
+        "org.freedesktop.portal.FileChooser"
+        "org.freedesktop.portal.Settings"
+      ];
+      hyprland.default = "*";
+    };
   };
 
   nix.settings = {
